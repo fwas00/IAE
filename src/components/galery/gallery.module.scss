@@ -1,0 +1,181 @@
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+.body {
+  background: #fcfcfc;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+.container {
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+.grid{
+     display: inline-block;
+}
+.col_1_2{
+    display: inline-block;
+}
+.col_2_2{
+    display: inline-block;
+  
+    margin-left: 10vh;
+   
+    margin-bottom: 5vh;
+}
+.col_1_2 {
+    width: 10vh;
+}
+.image{
+    background-image: url(https://uploaddeimagens.com.br/images/004/442/119/full/teste.png?1682362766);
+    
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 2vh;
+    height: 50vh;
+    width: 40vh; 
+}
+.block{
+    background-color: rgb(214, 212, 212);
+   
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 2vh;
+    height: 50vh;
+    width: 40vh;
+    display: inline-block;
+}
+.block_descricao{
+    background-color: rgb(24, 23, 23);
+    background-position: bot;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 2vh 2vh 0 0;
+    display: inline-block;
+}
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+.row{
+  min-width: auto;
+  background: #fff;
+  padding: 0 0 0 0;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+.h1, 
+.h2, 
+.h3, 
+.h4 {
+  color: #000000;
+}
+.h12{
+  color : red;
+}
+.h1,
+.h2, 
+.h3, 
+.h4, 
+.h5,
+.p {
+  font-style:"http://fonts.googleapis.com/css?family=Lato:100,300,400";
+  margin-bottom: 2vh;
+}
+.h1 {
+    font-size: 8vh;
+    line-height: 10vh;
+    margin-bottom: 20vh;
+    margin-left: 10vh;
+    font-weight: bold;
+  }
+.h2 {
+  font-size: 24vh;
+  line-height: 44vh;
+}
+.txt{
+    line-height: 90vh;
+    font-size: 2.5vh;
+    display:block;
+    color: #000;
+}
+.txt_h2{
+    line-height: 90vh;
+    font-size: 3vh;
+    display:block;
+    color: #000;
+}
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+.btn-default {
+  border-radius: 5vh;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5vh;
+  margin: 2;
+  text-transform: uppercase;
+  border: 2;
+  background: #ffff;
+  padding: 11vh 30vh;
+  font-size: 14vh;
+}
+
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.footer {
+  color: #000000;
+  font-size: 2vh;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+  float: right;
+  font-weight: bold;
+  
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: left;
+}
+.nav li {
+  margin: 0 10vh;
+  vertical-align: bottom;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+

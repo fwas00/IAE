@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Outfit", "Open Sans", "Roboto", sans-serif;
+}
+
+body {
+	color: #17202a;
+	background: #eaecee;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	animation-duration: 1s;
+	transition: ease-in;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #636363;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #afafaf;
+}

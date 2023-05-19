@@ -1,0 +1,72 @@
+.quebra_cabeca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    font-family: sans-serif;
+}
+.h1 {
+    font-size: 5vh;
+    line-height: 10vh;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 10vh;
+  }  
+#grade {
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+#grade div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background:url(https://free4kwallpapers.com/uploads/originals/2015/09/10/1080p-wallpaper-space.jpg);
+    background-size: 600px 400px;
+    transition: 0.25s  ease-in-out;
+}
+#grade div:hover{
+    z-index: i0;
+    opacity: 0.7;
+    transition: scale(1.1);
+    box-shadow: 0px 0px 3px 3px white;
+}
+#image {
+    height: 100px;
+    width: 150px;
+    margin: 0 auto;
+    position: relative;
+    background:url(https://free4kwallpapers.com/uploads/originals/2015/09/10/1080p-wallpaper-space.jpg);
+    background-size: 150px 100px;
+}
+.btn_logout {
+    border-radius: 1vh;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5vh;
+    margin: 2;
+    text-transform: uppercase;
+    border: 2;
+    background: rgb(0, 0, 0);
+    padding: 1vh 4.3vh;
+    font-size: 1vh;
+    align-items: right;
+  }
+  .btn_galeria {
+    border-radius: 1vh;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5vh;
+    margin: 2;
+    text-transform: uppercase;
+    border: 2;
+    background: rgb(0, 0, 0);
+    padding: 1vh 4vh;
+    font-size: 1vh;
+    align-items: left;
+  }

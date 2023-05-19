@@ -1,0 +1,400 @@
+.dashboardWrapper {
+	background: #fff;
+	position: fixed;
+	margin-left: 32vh;
+	width: 84.5%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	.dashboardTop {
+		display: flex;
+		position: relative;
+
+		justify-items: center;
+		align-self: center;
+
+		.searchBox {
+			span {
+				display: flex;
+				padding: 12%;
+				justify-items: center;
+				align-items: center;
+
+				input {
+					border-style: none;
+
+					background: transparent;
+					padding: 10px;
+					padding-left: 40px;
+					width: 50vh;
+					transition: border-color 0.5s;
+
+					&:hover {
+						border-color: #0080ff;
+					}
+				}
+
+				svg {
+					margin: 10px;
+					position: absolute;
+					height: 20px;
+					width: 20px;
+				}
+			}
+		}
+		.userImage {
+			display: flex;
+			position: absolute;
+			align-items: center;
+			right: 0%;
+			padding: 3%;
+
+			img {
+				width: 40px;
+				height: 40px;
+
+				border-radius: 10px;
+				margin-left: 4vh;
+
+				transition: box-shadow 0.5s;
+
+				&:hover {
+					box-shadow: 0 0 0 10px #c4c4c4;
+				}
+			}
+
+			svg {
+				color: #0080ff;
+			}
+		}
+	}
+
+	.dashboardMain {
+		display: flex;
+		margin: 2%;
+
+		li {
+			list-style: none;
+		}
+
+		.dashboardCards {
+			width: 60%;
+
+			.gameCard {
+				width: 100%;
+				height: 40vh;
+				align-items: center;
+				justify-items: center;
+				overflow: hidden;
+
+				background: url(../../assets/sledge-wallpaper.jpg) #000 bottom no-repeat;
+				background-size: cover;
+
+				border-radius: 20px;
+
+				.gameCardInfo {
+					display: flex;
+					top: 0;
+					right: 0;
+					justify-content: right;
+					align-items: center;
+					background: rgba(0, 89, 255, 0.9);
+
+					border-radius: 20px;
+
+					.operatorImage {
+						height: 20%;
+						width: 40%;
+
+						margin-left: 8%;
+					}
+
+					.infos {
+						display: flex;
+						justify-items: center;
+						align-self: center;
+
+						margin-top: -10%;
+
+						li {
+							list-style: none;
+							padding: 1.5%;
+							padding-left: 8%;
+						}
+
+						img {
+							height: 3%;
+							width: 17%;
+
+							padding-left: 0%;
+						}
+
+						.title {
+							color: #ffffff;
+							font-weight: 600;
+							font-size: 20px;
+						}
+
+						.subtitle {
+							display: flex;
+							align-items: center;
+							justify-items: center;
+
+							left: 0;
+							color: rgba(255, 255, 255, 0.8);
+							font-size: 12px;
+
+							.circle {
+								height: 6px;
+								width: 6px;
+								background-color: #bbb;
+								border-radius: 50%;
+								margin: 2%;
+								display: inline-block;
+							}
+
+							img {
+								width: 1.8rem;
+								height: 1.5rem;
+								padding-right: 1%;
+								margin-left: 0%;
+							}
+						}
+
+						button {
+							position: absolute;
+							border: none;
+							border-radius: 10px;
+							padding: 1.5% 3% 1.5% 3%;
+							margin-top: 1%;
+
+							color: #0080ff;
+
+							&:hover {
+								filter: brightness(0.9);
+							}
+						}
+					}
+				}
+			}
+
+			.dropdownWrapper {
+				width: 100%;
+				display: flex;
+				align-items: center;
+
+				margin: 20px 0px 15px 0px;
+
+				.text {
+					font-weight: 700;
+					font-size: 18px;
+				}
+
+				.dropdown {
+					width: 40vh;
+					color: #afafaf;
+					border: none;
+
+					margin-left: 55vh;
+					margin-right: 0%;
+				}
+			}
+
+			.listCards {
+				ul {
+					display: flex;
+				}
+
+				li {
+					list-style: none;
+					padding: 0px 85px 0px 5px;
+
+					img {
+						width: 160px;
+						height: 100px;
+
+						border-radius: 10px;
+					}
+
+					.title {
+						font-weight: 800;
+						transition: ease 0.5s;
+					}
+
+					.subtitle {
+						color: #afafaf;
+						font-size: 14px;
+						margin: 4% 0% 0% 0%;
+						transition: ease 0.5s;
+					}
+
+					&:hover {
+						.title {
+							color: #0080ff;
+						}
+
+						.subtitle {
+							color: black;
+						}
+					}
+				}
+			}
+		}
+
+		.matchBox {
+			width: 40%;
+			margin: 5%;
+			justify-self: center;
+			justify-items: center;
+
+			.dropdownTop {
+				width: 18vw;
+				color: #afafaf;
+				border: none;
+
+				margin-top: -7vh;
+				margin-bottom: 5vh;
+				font-size: 15px;
+				font-weight: 600;
+
+				transition: ease-in-out 0.5s;
+
+				&:hover {
+					border: solid 1px #0080ff;
+				}
+			}
+
+			.matchScoreboard {
+				justify-content: center;
+				justify-items: center;
+				align-items: center;
+
+				li {
+					align-items: center;
+					align-content: center;
+					width: 100%;
+					padding: 1%;
+				}
+
+				.title {
+					font-weight: 800;
+				}
+				.subtitle {
+					color: #afafaf;
+					font-size: 14px;
+					margin: 4% 0% 0% 0%;
+				}
+
+				.liveBtn {
+					background-color: rgba(228, 70, 70, 0.275);
+					color: crimson;
+					padding: 1% 3% 1% 3%;
+					margin-left: 5%;
+					margin-top: -5vh;
+					border-radius: 15%;
+					font-size: 14px;
+					position: relative;
+				}
+
+				.score {
+					display: flex;
+					margin-top: 2%;
+
+					font-weight: 800;
+
+					img {
+						width: 3vw;
+						height: auto;
+						margin-left: 1vw;
+					}
+
+					span {
+						justify-items: center;
+						text-align: center;
+					}
+
+					.scoreboard {
+						display: flex;
+						margin-right: 10%;
+
+						font-size: 26px;
+
+						p {
+							padding: 1%;
+							margin-right: 20%;
+							margin-left: 20%;
+						}
+					}
+				}
+
+				.watchBtn {
+					color: #ffffff;
+					background-color: #0080ff;
+					border: none;
+					border-radius: 10px;
+					margin: 1%;
+					padding: 3% 15% 3% 15%;
+					font-size: 13px;
+				}
+
+				.betBtn {
+					color: #636363;
+					background-color: #c4c4c4;
+					border: none;
+					border-radius: 10px;
+					margin-left: 5%;
+					padding: 3% 10% 3% 10%;
+					font-size: 13px;
+				}
+			}
+
+			.matchList {
+				margin-top: 2vh;
+
+				.top {
+					display: flex;
+					justify-content: start;
+					align-items: center;
+
+					font-weight: 800;
+
+					.dropdown {
+						width: 9vw;
+						color: #afafaf;
+						border: none;
+
+						margin-left: 8vw;
+						font-size: 15px;
+						font-weight: 600;
+
+						transition: ease-in-out 0.5s;
+
+						&:hover {
+							border: solid 1px #0080ff;
+						}
+					}
+				}
+
+				.list {
+					width: 100%;
+
+					li {
+						display: flex;
+						margin: 2% 2% 5% 0%;
+						color: #5f5f5f;
+					}
+
+					.circle {
+						height: 6px;
+						width: 6px;
+						background-color: #bbb;
+						border-radius: 50%;
+						margin: 2%;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}
